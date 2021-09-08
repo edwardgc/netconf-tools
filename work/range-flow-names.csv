@@ -1,0 +1,17 @@
+#template,vsi prefix,surfix,low layer,vlan 0,vlan 1 start,vlan 1 end,dhcp,pppoe
+two-two,user-vlan,dynamic1,dynamic1,408,33,1056,N,N
+two-two,net_rb_vlan,dynamic1,BP_Eth,408,33,1056,N,N
+two-two,user-vlan,dynamic1,dynamic1,408,1057,2080,N,N
+two-two,net_cc_vlan,dynamic1,BP_Eth,408,1057,2080,N,N
+two-two,user-vlan,dynamic2,dynamic2,418,33,1056,N,N
+two-two,net_rb_vlan,dynamic2,BP_Eth,418,33,1056,N,N
+two-two,user-vlan,dynamic2,dynamic2,418,1057,2080,N,N
+two-two,net_cc_vlan,dynamic2,BP_Eth,418,1057,2080,N,N
+two-two,user-vlan,dynamic3,dynamic3,428,33,1056,N,N
+two-two,net_rb_vlan,dynamic3,BP_Eth,428,33,1056,N,N
+two-two,user-vlan,dynamic3,dynamic3,428,1057,2080,N,N
+two-two,net_cc_vlan,dynamic3,BP_Eth,428,1057,2080,N,N
+two-two,user-vlan,eth7,eth7,438,33,1056,N,N
+two-two,net_rb_vlan,eth7,BP_Eth,438,33,1056,N,N
+two-two,user-vlan,eth7,eth7,438,1057,2080,N,N
+two-two,net_cc_vlan,eth7,BP_Eth,438,1057,2080,N,N

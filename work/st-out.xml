@@ -1,0 +1,529 @@
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="1">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>user-eth1-33</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+          <interface>eth1</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>33</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+		<l2-dhcpv4-relay xmlns="urn:bbf:yang:bbf-l2-dhcpv4-relay">
+			<enable>true</enable>
+			<profile-ref>dhcp_cp1</profile-ref>
+		</l2-dhcpv4-relay>
+
+      </interface>
+    </interfaces>
+  
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>net-eth1-33</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+            <interface>BP_Eth</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>33</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+      </interface>
+    </interfaces>
+  
+    <forwarding xmlns="urn:bbf:yang:bbf-l2-forwarding">
+      <forwarders>
+        <forwarder xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+          <name>fwd-eth1-33</name>
+          <ports>
+            <port>
+              <name>user-eth1-33</name>
+              <sub-interface>user-eth1-33</sub-interface>
+            </port>
+            <port>
+              <name>net-eth1-33</name>
+              <sub-interface>net-eth1-33</sub-interface>
+            </port>
+          </ports>
+          <flooding-policies>
+            <flooding-policies-profile>flood1</flooding-policies-profile>
+          </flooding-policies>
+          <split-horizon-profiles>
+            <split-horizon-profile>split</split-horizon-profile>
+          </split-horizon-profiles>
+          <l2-dhcpv4-relay xmlns="urn:bbf:yang:bbf-l2-dhcpv4-relay-forwarding">
+            <downstream-broadcast-flooding>false</downstream-broadcast-flooding>
+          </l2-dhcpv4-relay>
+          <mac-learning>
+            <forwarding-database>fdb-eth1-33</forwarding-database>
+          </mac-learning>
+
+        </forwarder>
+      </forwarders>
+    <forwarding-databases>
+      <forwarding-database xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>fdb-eth1-33</name>
+        <max-number-mac-addresses>10000</max-number-mac-addresses>
+        <aging-timer>3600</aging-timer>
+      </forwarding-database>
+    </forwarding-databases>
+
+    </forwarding>
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>user-eth1-34</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+          <interface>eth1</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>34</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+		<l2-dhcpv4-relay xmlns="urn:bbf:yang:bbf-l2-dhcpv4-relay">
+			<enable>true</enable>
+			<profile-ref>dhcp_cp1</profile-ref>
+		</l2-dhcpv4-relay>
+
+      </interface>
+    </interfaces>
+  
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>net-eth1-34</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+            <interface>BP_Eth</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>34</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+      </interface>
+    </interfaces>
+  
+    <forwarding xmlns="urn:bbf:yang:bbf-l2-forwarding">
+      <forwarders>
+        <forwarder xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+          <name>fwd-eth1-34</name>
+          <ports>
+            <port>
+              <name>user-eth1-34</name>
+              <sub-interface>user-eth1-34</sub-interface>
+            </port>
+            <port>
+              <name>net-eth1-34</name>
+              <sub-interface>net-eth1-34</sub-interface>
+            </port>
+          </ports>
+          <flooding-policies>
+            <flooding-policies-profile>flood1</flooding-policies-profile>
+          </flooding-policies>
+          <split-horizon-profiles>
+            <split-horizon-profile>split</split-horizon-profile>
+          </split-horizon-profiles>
+          <l2-dhcpv4-relay xmlns="urn:bbf:yang:bbf-l2-dhcpv4-relay-forwarding">
+            <downstream-broadcast-flooding>false</downstream-broadcast-flooding>
+          </l2-dhcpv4-relay>
+          <mac-learning>
+            <forwarding-database>fdb-eth1-34</forwarding-database>
+          </mac-learning>
+
+        </forwarder>
+      </forwarders>
+    <forwarding-databases>
+      <forwarding-database xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>fdb-eth1-34</name>
+        <max-number-mac-addresses>10000</max-number-mac-addresses>
+        <aging-timer>3600</aging-timer>
+      </forwarding-database>
+    </forwarding-databases>
+
+    </forwarding>
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>user-eth1-35</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+          <interface>eth1</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>35</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+		<l2-dhcpv4-relay xmlns="urn:bbf:yang:bbf-l2-dhcpv4-relay">
+			<enable>true</enable>
+			<profile-ref>dhcp_cp1</profile-ref>
+		</l2-dhcpv4-relay>
+
+      </interface>
+    </interfaces>
+  
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>net-eth1-35</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+            <interface>BP_Eth</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>35</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+      </interface>
+    </interfaces>
+  
+    <forwarding xmlns="urn:bbf:yang:bbf-l2-forwarding">
+      <forwarders>
+        <forwarder xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+          <name>fwd-eth1-35</name>
+          <ports>
+            <port>
+              <name>user-eth1-35</name>
+              <sub-interface>user-eth1-35</sub-interface>
+            </port>
+            <port>
+              <name>net-eth1-35</name>
+              <sub-interface>net-eth1-35</sub-interface>
+            </port>
+          </ports>
+          <flooding-policies>
+            <flooding-policies-profile>flood1</flooding-policies-profile>
+          </flooding-policies>
+          <split-horizon-profiles>
+            <split-horizon-profile>split</split-horizon-profile>
+          </split-horizon-profiles>
+          <l2-dhcpv4-relay xmlns="urn:bbf:yang:bbf-l2-dhcpv4-relay-forwarding">
+            <downstream-broadcast-flooding>false</downstream-broadcast-flooding>
+          </l2-dhcpv4-relay>
+          <mac-learning>
+            <forwarding-database>fdb-eth1-35</forwarding-database>
+          </mac-learning>
+
+        </forwarder>
+      </forwarders>
+    <forwarding-databases>
+      <forwarding-database xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>fdb-eth1-35</name>
+        <max-number-mac-addresses>10000</max-number-mac-addresses>
+        <aging-timer>3600</aging-timer>
+      </forwarding-database>
+    </forwarding-databases>
+
+    </forwarding>
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>user-eth2-1057</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+          <interface>eth2</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>1057</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+		<pppoe xmlns="urn:bbf:yang:bbf-pppoe-intermediate-agent">
+			<enable>true</enable>
+			<profile-ref>pppoe_cp1</profile-ref>
+		</pppoe>
+
+      </interface>
+    </interfaces>
+  
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>net-eth2-1057</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+            <interface>BP_Eth</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>1057</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+      </interface>
+    </interfaces>
+  
+    <forwarding xmlns="urn:bbf:yang:bbf-l2-forwarding">
+      <forwarders>
+        <forwarder xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+          <name>fwd-eth2-1057</name>
+          <ports>
+            <port>
+              <name>user-eth2-1057</name>
+              <sub-interface>user-eth2-1057</sub-interface>
+            </port>
+            <port>
+              <name>net-eth2-1057</name>
+              <sub-interface>net-eth2-1057</sub-interface>
+            </port>
+          </ports>
+
+        </forwarder>
+      </forwarders>
+
+    </forwarding>
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>user-eth2-1058</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+          <interface>eth2</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>1058</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+		<pppoe xmlns="urn:bbf:yang:bbf-pppoe-intermediate-agent">
+			<enable>true</enable>
+			<profile-ref>pppoe_cp1</profile-ref>
+		</pppoe>
+
+      </interface>
+    </interfaces>
+  
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>net-eth2-1058</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+            <interface>BP_Eth</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>1058</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+      </interface>
+    </interfaces>
+  
+    <forwarding xmlns="urn:bbf:yang:bbf-l2-forwarding">
+      <forwarders>
+        <forwarder xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+          <name>fwd-eth2-1058</name>
+          <ports>
+            <port>
+              <name>user-eth2-1058</name>
+              <sub-interface>user-eth2-1058</sub-interface>
+            </port>
+            <port>
+              <name>net-eth2-1058</name>
+              <sub-interface>net-eth2-1058</sub-interface>
+            </port>
+          </ports>
+
+        </forwarder>
+      </forwarders>
+
+    </forwarding>
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>user-eth2-1059</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+          <interface>eth2</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>1059</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+		<pppoe xmlns="urn:bbf:yang:bbf-pppoe-intermediate-agent">
+			<enable>true</enable>
+			<profile-ref>pppoe_cp1</profile-ref>
+		</pppoe>
+
+      </interface>
+    </interfaces>
+  
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>net-eth2-1059</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+            <interface>BP_Eth</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>1059</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+      </interface>
+    </interfaces>
+  
+    <forwarding xmlns="urn:bbf:yang:bbf-l2-forwarding">
+      <forwarders>
+        <forwarder xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+          <name>fwd-eth2-1059</name>
+          <ports>
+            <port>
+              <name>user-eth2-1059</name>
+              <sub-interface>user-eth2-1059</sub-interface>
+            </port>
+            <port>
+              <name>net-eth2-1059</name>
+              <sub-interface>net-eth2-1059</sub-interface>
+            </port>
+          </ports>
+
+        </forwarder>
+      </forwarders>
+
+    </forwarding>
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>user-eth2-1060</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+          <interface>eth2</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>1060</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+		<pppoe xmlns="urn:bbf:yang:bbf-pppoe-intermediate-agent">
+			<enable>true</enable>
+			<profile-ref>pppoe_cp1</profile-ref>
+		</pppoe>
+
+      </interface>
+    </interfaces>
+  
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+      <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>net-eth2-1060</name>
+        <type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+        <subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+            <interface>BP_Eth</interface>
+        </subif-lower-layer>
+        <frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+        <tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>408</vlan-id>
+        </tag-0>
+        <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+          <vlan-id>1060</vlan-id>
+        </tag-1>
+        <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+          <interface-usage>inherit</interface-usage>
+        </interface-usage>
+        <egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+      </interface>
+    </interfaces>
+  
+    <forwarding xmlns="urn:bbf:yang:bbf-l2-forwarding">
+      <forwarders>
+        <forwarder xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+          <name>fwd-eth2-1060</name>
+          <ports>
+            <port>
+              <name>user-eth2-1060</name>
+              <sub-interface>user-eth2-1060</sub-interface>
+            </port>
+            <port>
+              <name>net-eth2-1060</name>
+              <sub-interface>net-eth2-1060</sub-interface>
+            </port>
+          </ports>
+
+        </forwarder>
+      </forwarders>
+
+    </forwarding>
+
+    </config>
+  </edit-config>
+</rpc>

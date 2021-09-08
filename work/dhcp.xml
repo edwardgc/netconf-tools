@@ -1,0 +1,4 @@
+		<l2-dhcpv4-relay xmlns="urn:bbf:yang:bbf-l2-dhcpv4-relay">
+			<enable>true</enable>
+			<profile-ref>dhcp_cp1</profile-ref>
+		</l2-dhcpv4-relay>

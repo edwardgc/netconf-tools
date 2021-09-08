@@ -1,0 +1,4 @@
+		<pppoe xmlns="urn:bbf:yang:bbf-pppoe-intermediate-agent">
+			<enable>true</enable>
+			<profile-ref>pppoe_cp1</profile-ref>
+		</pppoe>

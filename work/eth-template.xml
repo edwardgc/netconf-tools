@@ -1,0 +1,66 @@
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>{1}</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">{2}</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>

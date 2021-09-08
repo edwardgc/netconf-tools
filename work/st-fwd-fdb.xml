@@ -1,0 +1,12 @@
+          <flooding-policies>
+            <flooding-policies-profile>flood1</flooding-policies-profile>
+          </flooding-policies>
+          <split-horizon-profiles>
+            <split-horizon-profile>split</split-horizon-profile>
+          </split-horizon-profiles>
+          <l2-dhcpv4-relay xmlns="urn:bbf:yang:bbf-l2-dhcpv4-relay-forwarding">
+            <downstream-broadcast-flooding>false</downstream-broadcast-flooding>
+          </l2-dhcpv4-relay>
+          <mac-learning>
+            <forwarding-database>fdb-{lowLayer}-{userVlan1}</forwarding-database>
+          </mac-learning>

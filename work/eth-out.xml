@@ -1,0 +1,2376 @@
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth1</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT1</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth2</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT2</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth3</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT3</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth4</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT4</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth5</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT5</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth6</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT6</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth7</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT7</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth8</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT8</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth9</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT9</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth10</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT10</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth11</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT11</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth12</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT12</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth13</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT13</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth14</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT14</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth15</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT15</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth16</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT16</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth17</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT17</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth18</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT18</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth19</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT19</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth20</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT20</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth21</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT21</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth22</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT22</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth23</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT23</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth24</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT24</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth25</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT25</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth26</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT26</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth27</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT27</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth28</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT28</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth29</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT29</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth30</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT30</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth31</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT31</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth32</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT32</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth33</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT33</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth34</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT34</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth35</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT35</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>
+          <interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+            <name>eth36</name>
+            <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+            <interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+              <interface-usage>user-port</interface-usage>
+            </interface-usage>
+            <port-layer-if xmlns="urn:bbf:yang:bbf-interface-port-reference">PORT36</port-layer-if>
+            <ethernet xmlns="urn:ieee:params:xml:ns:yang:ethernet">
+              <auto-negotiation>
+                <duplex>full</duplex>
+                <speed>eth-if-speed-1gb</speed>
+                <status>enabled</status>
+              </auto-negotiation>
+            </ethernet>
+            <tm-root xmlns="urn:bbf:yang:bbf-qos-traffic-mngt">
+              <queue>
+                <local-queue-id>0</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>1</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>2</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>3</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>4</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>5</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>6</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <queue>
+                <local-queue-id>7</local-queue-id>
+                <bac-name>Bac-01</bac-name>
+                <priority>1</priority>
+                <weight>10</weight>
+              </queue>
+              <shaper-name xmlns="urn:bbf:yang:bbf-qos-shaping">500M_shaper5</shaper-name>
+            </tm-root>
+          </interface>

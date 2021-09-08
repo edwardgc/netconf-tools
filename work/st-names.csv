@@ -1,0 +1,3 @@
+#userTemplate,user vsi prefix,low layer,userVlan0,userVlan1 start,userVlan1 end,dhcp,pppoe,netTemplateName,net vsi prefix,netVlan0,netVlan1 start,netVlan1 end,fwd type
+two-two,user,eth1,408,33,35,Y,N,two-two,net,408,33,35,rb
+two-two,user,eth2,408,1057,1060,N,Y,two-two,net,408,1057,1060,cc

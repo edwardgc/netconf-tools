@@ -1,0 +1,7 @@
+    <forwarding-databases>
+      <forwarding-database xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+        <name>fdb-{lowLayer}-{userVlan1}</name>
+        <max-number-mac-addresses>10000</max-number-mac-addresses>
+        <aging-timer>3600</aging-timer>
+      </forwarding-database>
+    </forwarding-databases>

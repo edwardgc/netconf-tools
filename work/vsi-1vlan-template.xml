@@ -1,0 +1,31 @@
+<interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+	<interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+		<name>{1}</name>
+		<type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+		<subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+			<interface>{2}</interface>
+		</subif-lower-layer>
+		<frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">CC-SINGLE-VLAN-PROFILE</frame-processing-profile-ref>
+		<tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+			<vlan-id>{3}</vlan-id>
+		</tag-0>
+		<interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+			<interface-usage>inherit</interface-usage>
+		</interface-usage>
+		<egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+	</interface>
+	<interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+		<name>{4}</name>
+		<type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+		<subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+			<interface>BP_Eth</interface>
+		</subif-lower-layer>
+		<frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">CC-SINGLE-VLAN-PROFILE</frame-processing-profile-ref>
+		<tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+			<vlan-id>{3}</vlan-id>
+		</tag-0>
+		<interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+			<interface-usage>inherit</interface-usage>
+		</interface-usage>
+	</interface>
+</interfaces>

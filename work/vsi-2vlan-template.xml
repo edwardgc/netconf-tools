@@ -1,0 +1,55 @@
+<interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+	<interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+		<name>{2}-{3}</name>
+		<type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+		<subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+			<interface>{3}</interface>
+		</subif-lower-layer>
+		<frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">{1}</frame-processing-profile-ref>
+		<tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+			<vlan-id>{4}</vlan-id>
+		</tag-0>
+		<tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+			<vlan-id>{5}</vlan-id>
+		</tag-1>
+		<interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+			<interface-usage>inherit</interface-usage>
+		</interface-usage>
+		<egress-qos-policy-profile xmlns="urn:bbf:yang:bbf-qos-policies">EPP0</egress-qos-policy-profile>
+	</interface>
+	<interface xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+		<name>net-{2}-{3}</name>
+		<type xmlns:bbfift="urn:bbf:yang:bbf-if-type">bbfift:vlan-sub-interface</type>
+		<subif-lower-layer xmlns="urn:bbf:yang:bbf-sub-interfaces">
+			<interface>BP_Eth</interface>
+		</subif-lower-layer>
+		<frame-processing-profile-ref xmlns="urn:bbf:yang:bbf-frame-processing-profile">two-two</frame-processing-profile-ref>
+		<tag-0 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+			<vlan-id>{4}</vlan-id>
+		</tag-0>
+	    <tag-1 xmlns="urn:bbf:yang:bbf-frame-processing-profile">
+			<vlan-id>{5}</vlan-id>
+		</tag-1>
+		<interface-usage xmlns="urn:bbf:yang:bbf-interface-usage">
+			<interface-usage>inherit</interface-usage>
+		</interface-usage>
+	</interface>
+</interfaces>
+
+<forwarding xmlns="urn:bbf:yang:bbf-l2-forwarding">
+	<forwarders>
+		<forwarder xmlns:ns0="urn:ietf:params:xml:ns:netconf:base:1.0" ns0:operation="merge">
+			<name>fwd_{2}-{3}</name>
+			<ports>
+				<port>
+					<name>{2}-{3}</name>
+					<sub-interface>{2}-{3}</sub-interface>
+				</port>
+				<port>
+					<name>net-{2}-{3}</name>
+					<sub-interface>net-{2}-{3}</sub-interface>
+				</port>
+			</ports>
+		</forwarder>
+	</forwarders>
+</forwarding>
