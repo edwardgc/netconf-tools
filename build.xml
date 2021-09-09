@@ -1,0 +1,61 @@
+<project name="netconf-tools" default="generate" basedir=".">
+	<description>
+		netconf-tools build files
+    </description>
+	<!-- set global properties for this build -->
+	<property file="build.properties" />
+	<property file="${resources}/ApplicationResources.properties" />
+	<property name="mainjar" value="${ant.project.name}-${version}.jar" />
+
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp />
+	</target>
+
+	<target name="compile" depends="init" description="compile the source ">
+		<mkdir dir="${bin}" />
+		<javac nowarn="true" srcdir="${src}" destdir="${bin}" classpath="" includeantruntime="on">
+			<compilerarg line="-g:source,lines,vars -encoding UTF-8 " />
+		</javac>
+		<copy todir="${bin}">
+			<fileset dir="${src}">
+				<include name="**/*.properties" />
+				<include name="**/*.png" />
+			</fileset>
+		</copy>
+		<copy todir="${bin}">
+			<fileset dir="${resources}">
+				<include name="**/*.properties" />
+				<include name="**/*.png" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="jar" depends="compile" description="generate the distribution">
+		<mkdir dir="${build}" />
+		<jar jarfile="${build}/${mainjar}" basedir="${bin}" includes="**" excludes="test/**">
+			<manifest>
+				<attribute name="Main-Class" value="performance.DeviationMain" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="clean" description="clean up">
+		<!-- Delete the ${bin} and ${dist} directory trees -->
+		<delete dir="${bin}" />
+		<delete dir="${build}" />
+	</target>
+
+	<target name="generate" depends="jar">
+		<java jar="${build}/${mainjar}" fork="true">
+			<arg value="-f" />
+			<arg value="${trunk}" />
+			<arg value="${build}" />
+		</java>
+		<delete>
+			<fileset dir="${build}" includes="**/*.gv" />
+		</delete>
+	</target>
+
+</project>
+
