@@ -1,4 +1,4 @@
-<project name="netconf-tools" default="generate" basedir=".">
+<project name="netconf-tools" default="dist" basedir=".">
 	<description>
 		netconf-tools build files
     </description>
@@ -34,6 +34,9 @@
 	<target name="jar" depends="compile" description="generate the distribution">
 		<mkdir dir="${build}" />
 		<jar jarfile="${build}/${mainjar}" basedir="${bin}" includes="**" excludes="test/**">
+			<zipfileset src="${basedir}/lib/commons-exec-1.3.jar">
+				<exclude name="META-INF/**"/>
+			</zipfileset>
 			<manifest>
 				<attribute name="Main-Class" value="performance.DeviationMain" />
 			</manifest>
@@ -46,15 +49,12 @@
 		<delete dir="${build}" />
 	</target>
 
-	<target name="generate" depends="jar">
-		<java jar="${build}/${mainjar}" fork="true">
-			<arg value="-f" />
-			<arg value="${trunk}" />
-			<arg value="${build}" />
-		</java>
-		<delete>
-			<fileset dir="${build}" includes="**/*.gv" />
-		</delete>
+	<target name="dist" depends="jar">
+		<copy todir="${dist}">
+			<fileset dir="${build}">
+				<include name="**/*.jar" />
+			</fileset>
+		</copy>
 	</target>
 
 </project>
